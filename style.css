@@ -1,12 +1,15 @@
 body { 
     font-family: Arial, sans-serif; 
-    background-color: #f8f8f8 ;
+    background:  url("tlo.jpg") no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
     margin: auto;
     padding: auto;
 }
 
 header { 
-    background-color: #333333; 
+    background-color: #B3C7D0; 
     color: white; 
     text-align: center;
     padding: 10px;
@@ -14,36 +17,84 @@ header {
 }
 
 nav { 
-    background: #505050; 
+    background: #B3C7D0; 
     padding: 10px; 
     text-align: center; 
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 nav a {
     color: white;
     font-size: 140%;
     font-weight: bold;
-    margin: 0 15px;
+    padding: 11px;
     cursor: pointer;
+}
+nav a:hover {
+    padding: 11px;
+    background: white; 
+    color: #B3C7D0;
 }
 
 section {
-    background-color: white;
+    backdrop-filter: blur(5px);
     padding: 15px;
     margin: auto;
     margin-top: 30px;
-    width: 60%;
+    width: 80%;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 25px rgb(0, 0, 0);
 }
 
-table {
-    width: 100%;
+#uslugi table {
+    margin: auto;
+    width: 60%;
     border-collapse: collapse;
 }
-table, td, th {
-    border: 1px solid #cccccc;
+#uslugi td, th {
+    border: 1px solid;
     padding: 10px;
     text-align: left;
+    width: 50%;
+}
+#wizyta table, td, tr {
+    border: none;
+}
+
+#kalendarz {
+    border: none;
+    background-color:#B3C7D0;
+    height: 25px;
+    width: 200px;
+    font-size: 120%;
+
+}
+#umowiona_wizyta {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.ukryta_sekcja {
+    display: none;
+}
+
+#kontakt input {
+    border: none;
+    background-color:#B3C7D0;
+    height: 25px;
+    width: 200px;
+    font-size: 120%;
+
+}
+
+footer {
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+footer img {
+    width: 30px;
 }

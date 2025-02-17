@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechComp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="icon.png">
+</head>
+<body>
+    
+    <header id="baner">
+        <h1>TechComp - Profesjonalny Serwis Komputerowy</h1>
+    </header>
+
+
+    <nav>
+        <a onclick="przewin('baner')">Strona Główna</a>
+        <a onclick="przewin('uslugi')">Usługi</a>
+        <a onclick="przewin('serwis')">Serwis</a>
+        <a onclick="przewin('kontakt')">Kontakt</a>
+    </nav>
+    
+    <main>
+        <section id="glowna">
+            <h2>O firmie TechComp</h2>
+            <p>TechComp to firma z wieloletnim doświadczeniem w branży IT. Specjalizujemy się w kompleksowej naprawie, modernizacji i optymalizacji komputerów stacjonarnych oraz laptopów. Nasi technicy to eksperci z pasją, którzy każdego dnia pomagają klientom w rozwiązywaniu problemów technicznych.</p>
+            <p>Oferujemy wsparcie zarówno dla klientów indywidualnych, jak i firm. Dzięki nowoczesnym rozwiązaniom i ciągłemu rozwojowi jesteśmy w stanie zapewnić szybkie i skuteczne naprawy. Gwarantujemy konkurencyjne ceny, przejrzyste warunki współpracy oraz najwyższą jakość obsługi.</p>
+
+            <h3>Dlaczego warto nam zaufać?</h3>
+            <ul>
+                <li><strong>Doświadczenie i profesjonalizm</strong> – nasi technicy to eksperci z wieloletnim stażem w branży IT.</li>
+                <li><strong>Szybka diagnoza i naprawa</strong> – większość problemów rozwiązujemy w ciągu 24 godzin.</li>
+                <li><strong>Konkurencyjne ceny</strong> – oferujemy najlepszy stosunek jakości do ceny na rynku.</li>
+                <li><strong>Pomoc zdalna</strong> – wsparcie online dla klientów, którzy nie mogą odwiedzić naszego serwisu.</li>
+                <li><strong>Gwarancja na usługi</strong> – każda naprawa objęta jest gwarancją serwisową.</li>
+            </ul>
+
+            <h3>Historia i rozwój</h3>
+            <p>Firma <strong>TechComp</strong> została założona w 2015 roku przez grupę pasjonatów technologii, którzy dostrzegli rosnącą potrzebę wsparcia informatycznego zarówno dla osób prywatnych, jak i przedsiębiorstw. Od tego czasu nieustannie się rozwijamy, inwestując w nowoczesne technologie, szkolenia oraz rozbudowę oferty serwisowej.</p>
+
+            <h3>Nasze podejście</h3>
+            <p>Każdego klienta traktujemy indywidualnie, dopasowując nasze usługi do jego potrzeb. Dzięki nowoczesnym metodom diagnostycznym oraz partnerskim relacjom z największymi dostawcami sprzętu i oprogramowania, możemy zapewnić najwyższy standard obsługi.</p>
+
+            <h3>Obsługiwane obszary</h3>
+            <p>Nasza siedziba znajduje się w Rzeszowie, ale świadczymy usługi stacjonarnie na terenie całego województwa, jak i zdalnie. Obsługujemy klientów prywatnych, firmy oraz instytucje publiczne, dostarczając kompleksowe rozwiązania IT.</p>
+
+        </section> 
+
+        <section id="uslugi">
+            <h2>Nasze usługi</h2>
+            <table>
+                <tr><th>Usługa</th><th>Cena</th></tr>
+                <tr><td>Diagnoza problemu</td><td>50 zł</td></tr>
+                <tr><td>Naprawa systemu operacyjnego</td><td>100 zł</td></tr>
+                <tr><td>Wymiana podzespołów</td><td>od 80 zł</td></tr>
+                <tr><td>Oczyszczanie z wirusów</td><td>120 zł</td></tr>
+                <tr><td>Instalacja oprogramowania</td><td>70 zł</td></tr>
+                <tr><td>Modernizacja komputera</td><td>od 150 zł</td></tr>
+                <tr><td>Czyszczenie sprzętu</td><td>50 zł</td></tr>
+                <tr><td>Odzyskiwanie danych</td><td>od 200 zł</td></tr>
+                <tr><td>Konfiguracja sieci domowej</td><td> od 100 zł</td></tr>
+                <tr><td>Instalacja systemu operacyjnego</td><td>120 zł</td></tr>
+                <tr><td>Konfiguracja drukarek i skanerów</td><td>80 zł</td></tr>
+                <tr><td>Tworzenie kopii zapasowych</td><td>od 100 zł</td></tr>
+                <tr><td>Aktualizacja sterowników</td><td>od 30 zł</td></tr>
+                <tr><td>Serwis laptopów gamingowych</td><td>od 200 zł</td></tr>
+                <tr><td>Konfiguracja serwerów</td><td>od 300 zł</td></tr>
+                <tr><td>Rozwiązywanie problemów z internetem</td><td>od 80 zł</td></tr>
+                </table>
+        </section>
+
+        <section id="serwis">
+            <h2>Serwis i pomoc zdalna</h2>
+            <p>Oferujemy pełen zakres usług serwisowych, zarówno stacjonarnie, jak i online. Jeśli masz problem z komputerem, ale nie możesz odwiedzić naszego punktu, skontaktuj się z nami, a nasi specjaliści pomogą Ci zdalnie!</p>
+            <h3>Umów wizytę</h3>
+            <p>Umów się na wybrany termin, a nasz technik połączy się z twoim urządzniem i zdalnie rozwiąże twój problem </p>
+            <table id="wizyta">
+                <tr>
+                    <td><input onchange="wizyta()" id="kalendarz" type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <td><p id="umowiona_wizyta"></p></td>
+                </tr>
+            </table>
+            
+            
+                
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p><strong>TechComp</strong></p>
+            <p>ul. Komputerowa 23, 35-111 Rzeszów</p>
+            <p>Telefon: <strong>+48 123 456 789</strong></p>
+            <p>Email: <strong>kontakt@techcomp.pl</strong></p>
+            
+            <p>Potrzebujesz pomocy? Zgłoś swój problem w formularzu, a przyspieszy to proces naprawy</p>
+            <h3>Formularz zgłoszeniowy</h3>
+            <button onclick="pokaz()">ZGŁOSZENIE</button>
+
+            <section id="imienazwisko" class="ukryta_sekcja">
+                <input type="text" id="dane_osobowe" placeholder="Imie i Nazwisko" required><br>
+                <button onclick="nastepny1()">DALEJ</button>
+            </section>
+
+            <section id="telefon" class="ukryta_sekcja">
+                <input type="tel" placeholder="Numer telefonu" required id="numer_telefonu"> <br>
+                <button onclick="nastepny2()">DALEJ</button>
+            </section>
+
+            <section id="zgloszenie" class="ukryta_sekcja">
+                <select id="rodzaj" required>
+                    <option value="">Wybierz rodzaj zgłoszenia</option>
+                    <option value="Naprawa komputera">Naprawa komputera</option>
+                    <option value="Czyszczenie sprzętu">Czyszczenie sprzętu</option>
+                    <option value="Odzyskiwanie danych">Odzyskiwanie danych</option>
+                    <option value="onfiguracja sprzętu">Konfiguracja sprzętu</option>
+                    <option value="Konfiguracja sieci">Konfiguracja sieci</option>
+                    <option value="Inne">Inne</option>
+                </select> <br>
+
+                <button onclick="nastepny3()">DALEJ</button>
+            </section>
+
+            <section id="problem" class="ukryta_sekcja">
+                <textarea id="usterka" placeholder="Opisz swój problem"></textarea> <br>
+                <button onclick="nastepny4()">DALEJ</button>
+            </section>
+
+            <section id="potwierdzenie" class="ukryta_sekcja">
+                <p id="wynik">wynik</p> <br>
+                <button onclick="nastepny5()">DALEJ</button>
+            </section>
+
+            <section id="zakonczenie" class="ukryta_sekcja">
+                <p>dziekujemy</p>
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 TechComp. Design & code by Patryk Cisek. Wszystkie prawa zastrzeżone.</p>
+        
+    </footer>
+</body>
+</html>
