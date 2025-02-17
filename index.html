@@ -73,24 +73,80 @@
 
         <section id="serwis">
             <h2>Serwis i pomoc zdalna</h2>
-            <p>Oferujemy pełen zakres usług serwisowych, zarówno stacjonarnie, jak i online. Jeśli masz problem z komputerem, ale nie możesz odwiedzić naszego punktu, skorzystaj z pomocy zdalnej.</p>
+            <p>Oferujemy pełen zakres usług serwisowych, zarówno stacjonarnie, jak i online. Jeśli masz problem z komputerem, ale nie możesz odwiedzić naszego punktu, skontaktuj się z nami, a nasi specjaliści pomogą Ci zdalnie!</p>
             <h3>Umów wizytę</h3>
+            <p>Umów się na wybrany termin, a nasz technik połączy się z twoim urządzniem i zdalnie rozwiąże twój problem </p>
+            <table id="wizyta">
+                <tr>
+                    <td><input onchange="wizyta()" id="kalendarz" type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <td><p id="umowiona_wizyta"></p></td>
+                </tr>
+            </table>
+            
+            
                 
         </section>
 
         <section id="kontakt">
             <h2>Kontakt</h2>
             <p><strong>TechComp</strong></p>
-            <p>ul. Komputerowa 18, 35-111 Rzeszów</p>
+            <p>ul. Komputerowa 23, 35-111 Rzeszów</p>
             <p>Telefon: <strong>+48 123 456 789</strong></p>
             <p>Email: <strong>kontakt@techcomp.pl</strong></p>
             
+            <p>Potrzebujesz pomocy? Zgłoś swój problem w formularzu, a przyspieszy to proces naprawy</p>
             <h3>Formularz zgłoszeniowy</h3>
+            <button onclick="pokaz()">ZGŁOSZENIE</button>
+
+            <section id="imienazwisko" class="ukryta_sekcja">
+                <input type="text" id="dane_osobowe" placeholder="Imie i Nazwisko" required><br>
+                <button onclick="nastepny1()">DALEJ</button>
+            </section>
+
+            <section id="telefon" class="ukryta_sekcja">
+                <input type="tel" placeholder="Numer telefonu" required id="numer_telefonu"> <br>
+                <button onclick="nastepny2()">DALEJ</button>
+            </section>
+
+            <section id="zgloszenie" class="ukryta_sekcja">
+                <select id="rodzaj" required>
+                    <option value="">Wybierz rodzaj zgłoszenia</option>
+                    <option value="Naprawa komputera">Naprawa komputera</option>
+                    <option value="Czyszczenie sprzętu">Czyszczenie sprzętu</option>
+                    <option value="Odzyskiwanie danych">Odzyskiwanie danych</option>
+                    <option value="onfiguracja sprzętu">Konfiguracja sprzętu</option>
+                    <option value="Konfiguracja sieci">Konfiguracja sieci</option>
+                    <option value="Inne">Inne</option>
+                </select> <br>
+
+                <button onclick="nastepny3()">DALEJ</button>
+            </section>
+
+            <section id="problem" class="ukryta_sekcja">
+                <textarea id="usterka" placeholder="Opisz swój problem"></textarea> <br>
+                <button onclick="nastepny4()">DALEJ</button>
+            </section>
+
+            <section id="potwierdzenie" class="ukryta_sekcja">
+                <p id="wynik">wynik</p> <br>
+                <button onclick="nastepny5()">DALEJ</button>
+            </section>
+
+            <section id="zakonczenie" class="ukryta_sekcja">
+                <p>dziekujemy</p>
+            </section>
 
 
         </section>
 
     </main>
 
+
+    <footer>
+        <p>&copy; 2024 TechComp. Design & code by Patryk Cisek. Wszystkie prawa zastrzeżone.</p>
+        
+    </footer>
 </body>
 </html>
