@@ -1,0 +1,149 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background:  url("tlo.jpg") no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    margin: auto;
+    padding: auto;
+}
+
+header { 
+    background-color: #B3C7D0; 
+    color: white; 
+    text-align: center;
+    padding: 10px;
+    font-size: 80%;
+}
+
+nav { 
+    background: #B3C7D0; 
+    padding: 10px; 
+    text-align: center; 
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav a {
+    color: white;
+    font-size: 140%;
+    font-weight: bold;
+    padding: 11px;
+    cursor: pointer;
+}
+nav a:hover {
+    padding: 11px;
+    background: white; 
+    color: #B3C7D0;
+}
+
+section {
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 25px rgb(0, 0, 0);
+}
+
+#uslugi table {
+    margin: auto;
+    width: 60%;
+    border-collapse: collapse;
+}
+#uslugi td, th {
+    border: 1px solid;
+    padding: 10px;
+    text-align: left;
+    width: 50%;
+}
+#wizyta table, td, tr {
+    border: none;
+}
+
+#kalendarz {
+    border: none;
+    background-color:#B3C7D0;
+    height: 25px;
+    width: 200px;
+    font-size: 120%;
+
+}
+#umowiona_wizyta {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#zgloszenie {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid;
+    background-color: #B3C7D0;
+    border-radius: 5px;
+
+}
+.ukryta_sekcja {
+    display: none;
+}
+
+#imienazwisko table {
+    width: 90%;
+    margin: auto;
+}
+#imienazwisko input {
+    width: 100%;
+    height: 150%;
+    padding: 10px;
+    border: 1px solid;
+    background-color: #B3C7D0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+#imienazwisko select {
+    width: 100%;
+    height: 150%;
+    padding: 10px;
+    border: 1px solid;
+    background-color: #B3C7D0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+#imienazwisko textarea {
+    width: 100%;
+    height: 150%;
+    padding: 10px;
+    border: 0.5px solid;
+    background-color: #B3C7D0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+#imienazwisko button {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid;
+    background-color: #B3C7D0;
+    border-radius: 5px;
+}
+
+#potwierdzenie button {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid;
+    background-color: #B3C7D0;
+    border-radius: 5px;
+}
+
+footer {
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+footer img {
+    width: 30px;
+}
